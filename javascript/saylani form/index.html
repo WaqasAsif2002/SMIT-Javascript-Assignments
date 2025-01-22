@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="images.png" alt="Logo" width="150">
+    </div>
+
+    <h2>Registration Form</h2>
+    <form id="myForm" action="submit.html">
+        <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" required>
+        </div>
+        <div>
+            <label for="course">Course:</label>
+            <select id="course" required>
+                <option value="">Select a course</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Data Science">Data Science</option>
+                <!-- Add more courses as needed -->
+            </select>
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <select id="city" required>
+                <option value="">Select a city</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <!-- Add more cities as needed -->
+            </select>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" required>
+        </div>
+        <div>
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="cnic">CNIC:</label>
+            <input type="text" id="cnic" required>
+        </div>
+        <div>
+            <label for="fatherCnic">Father's CNIC:</label>
+            <input type="text" id="fatherCnic" required>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
